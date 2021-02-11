@@ -1,22 +1,20 @@
 class Calcular {
 
     constructor() {
-        this.numbers = document.querySelectorAll(".number");
+        this.numeros = document.querySelectorAll(".number");
         this.result = document.querySelector("#result");
         this.btnReset = document.querySelector("#reset");
         this.btnResolve = document.querySelector("#resolve");
 
         this.btnReset.onclick = () => this.reset();
         this.btnResolve.onclick = () => this.resolve();
-        this.insertNumber();
+        this.inserirNumeros();
     };
 
-    insertNumber() {
-        for (let n of this.numbers) {
-            n.onclick = () => {
-                // console.log(n);
-                console.log(n.value);
-                // this.result.value += n.value;
+    inserirNumeros() {
+        for (let i of this.numeros) {
+            i.onclick = () => {
+                this.result.value += i.value;
             }
         }
     };
@@ -31,4 +29,4 @@ class Calcular {
     };
 }
 
-const calculator = new Calcular;
+const calculadora = new Calcular;

@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+}
+body{
+    padding-top: 50px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(46, 46, 46);
+    
+}
+
+section{
+    /* width: 50%; */
+    background-color: black;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+form {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    
+}
+main{
+    padding: 5px;
+    border: 1px white solid;
+}
+form h1{
+    color: orange;   
+    font-weight: bolder;
+    margin-bottom:15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+form #inputGrey{
+    background-color: #a5a5a5;
+}
+
+
+form #div-result input{
+ width: 331px;
+ height: 70px;
+ background-color: black;
+ margin-bottom: 1px;
+ border: none;
+ cursor: pointer;
+ color: white;
+ font-size: 40px;
+ text-align: right; 
+}
+
+form .linhas input{
+    width: 80px;
+    height: 50px;
+    margin: 4px 2px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline:none;
+}
+
+form #reset{
+    width: 164px;
+    border-radius: 100px;
+    background-color: #a5a5a5;
+}
+
+form .linhas input:hover{
+    background-color: rgb(57, 65, 65);
+
+}
+
+form .linhas input:last-child{
+    background-color: orange;
+}
+
+form .linhas input:last-child:hover{
+    background-color: rgb(57, 65, 65);
+}
+
+@media(min-width:425px){
+    main{
+        width: 300px;
+        height: 80vh;
+    }
+
+    form #div-result input{
+        width: 291px;
+    }
+    form #reset{
+        width: 118px;
+    }
+    form .linhas input{
+        width: 70px;
+    }
+}
+
+@media(min-width:375px){
+    main{
+        width: 300px;
+        height: 80vh;
+    }
+
+    form #div-result input{
+        width: 291px;
+    }
+    form #reset{
+        width: 118px;
+    }
+    form .linhas input{
+        width: 70px;
+    }
+}
+@media(min-width:320px){
+    main{
+        width: 300px;
+        height: 80vh;
+        padding: none;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form #div-result input{
+        width: 291px;
+    }
+    form #reset{
+        width: 118px;
+        border-radius: 100px;
+        background-color: #a5a5a5;
+    }
+    form .linhas input{
+        width: 60px;
+        font-size:20px;
+        border-radius: 100px;
+        color:white;
+        background-color: #333333;
+    }
+}
